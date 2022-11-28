@@ -1,0 +1,55 @@
+.header-bar {
+  @include flex-center;
+  justify-content: space-between;
+  .user-holder {
+    @include flex-center;
+    gap: 3px;
+    .user-img {
+      width: 50px;
+      height: 50px;
+    }
+    .name {
+      @include fw-fs-lh(600, 16px, 30px);
+      color: $dark-color;
+    }
+  }
+}
+.bar-definition {
+  @include flex-center;
+  justify-content: space-between;
+  p {
+    @include fw-fs-lh(500, 16px, 30px);
+    color: $dark-color;
+  }
+  .show-all {
+    @include flex-center;
+    gap: 4px;
+    @include fw-fs-lh(700, 12px, 22px);
+    color: $main-color;
+  }
+}
+.box-content {
+  background: $white-color;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.01), 0px 3px 2px rgba(0, 0, 0, 0.03),
+    0px 1px 1px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.05),
+    0px 0px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+.box-game {
+  .image-holder {
+    border-radius: 8px 8px 0px 0px;
+    width: 100%;
+    height: 120px;
+    img {
+      border-radius: 8px 8px 0px 0px;
+      @include full-w-h;
+    }
+  }
+  p {
+    padding: 13px;
+    text-align: center;
+    @include fw-fs-lh(500, 16px, 30px);
+    color: $dark-color;
+  }
+}

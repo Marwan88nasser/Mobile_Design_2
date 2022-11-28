@@ -1,0 +1,102 @@
+.landing-swiper {
+  height: 100vh;
+  .swiper-wrapper {
+    .swiper-slide {
+      @include full-w-h;
+      .box-bg {
+        height: 65%;
+        width: 100%;
+        img {
+          @include full-w-h;
+          // object-fit: cover;
+        }
+      }
+      .box-text {
+        height: 35%;
+        @include flex-center;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        h4 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 37px;
+          color: $main-color;
+          margin-bottom: 0;
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 30px;
+          color: $gray-text;
+        }
+      }
+    }
+  }
+  .swiper-button-prev {
+    color: $xt-gray;
+  }
+  .swiper-button-next {
+    color: $main-color;
+    left: 18px !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    top: auto;
+    bottom: 10px;
+    &::after {
+      content: "" !important;
+    }
+  }
+  .swiper-pagination {
+    bottom: 25px !important;
+  }
+  .swiper-pagination-bullet {
+    transition: $main-transition;
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background-color: $xt-gray !important;
+  }
+  .swiper-pagination-bullet-active {
+    width: 14px;
+    height: 14px;
+    opacity: 1 !important;
+    background-color: $main-color !important;
+  }
+}
+.main-slider {
+  width: 100%;
+  height: 300px;
+  .main-swiper {
+    @include full-w-h;
+    .swiper-wrapper {
+      .swiper-slide {
+        @include full-w-h;
+          img {
+            @include full-w-h;
+          }
+      }
+    }
+    .swiper-pagination {
+      bottom: 0px !important;
+    }
+    .swiper-pagination-bullet {
+      transition: $main-transition;
+      width: 10px;
+      height: 10px;
+      opacity: 1;
+      background-color: $xt-gray !important;
+    }
+    .swiper-pagination-bullet-active {
+      width: 13px;
+      height: 13px;
+      opacity: 1 !important;
+      background-color: $main-color !important;
+    }
+  }
+
+}

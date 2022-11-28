@@ -1,0 +1,13 @@
+.check-text {
+  @include fw-fs-lh(500, 16px, 30px);
+  color: $dark-color;
+  a {
+    @include fw-fs-lh(700, 16px, 30px);
+    color: $main-color;
+    margin-right: 8px;
+    &:hover {
+      color: $alt-color;
+      text-decoration: underline;
+    }
+  }
+}

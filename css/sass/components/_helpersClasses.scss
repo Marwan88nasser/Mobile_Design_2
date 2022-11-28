@@ -38,3 +38,20 @@
 .w-fit {
   width: fit-content;
 }
+
+// Alerts
+.main-alert {
+  @include flex-center;
+  padding: 4px 8px;
+  width: 231px;
+  height: 30px;
+  background: $xs-light-color;
+  border-radius: 8px;
+  color: $main-color;
+  @include fw-fs-lh(600, 12px, 22px);
+}
+
+.sm-text {
+  color: $gray-text;
+  @include fw-fs-lh(600, 11px, 21px);
+}

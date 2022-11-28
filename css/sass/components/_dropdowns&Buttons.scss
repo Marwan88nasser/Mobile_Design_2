@@ -1,13 +1,17 @@
+.btn-lg,
+.white-btn,
+.main-btn,
 .sing-btn,
 .skip-btn {
   @include flex-center;
   padding: 13px 120px;
-  width: 350px;
+  // width: 350px;
+  width: 100%;
   height: 56px;
   background: $alt-color;
   box-shadow: 0px 5px 2px rgba(37, 37, 37, 0.01),
-  0px 3px 2px rgba(37, 37, 37, 0.03), 0px 1px 1px rgba(37, 37, 37, 0.04),
-  0px 0px 1px rgba(37, 37, 37, 0.05), 0px 0px 0px rgba(37, 37, 37, 0.05);
+    0px 3px 2px rgba(37, 37, 37, 0.03), 0px 1px 1px rgba(37, 37, 37, 0.04),
+    0px 0px 1px rgba(37, 37, 37, 0.05), 0px 0px 0px rgba(37, 37, 37, 0.05);
   border-radius: 16px;
   @include fw-fs-lh(500, 16px, 30px);
   color: $white-color;
@@ -18,4 +22,60 @@
   background: $mainLight-color;
   gap: 4px;
   color: $main-color;
+}
+
+.main-btn {
+  padding: 13px 70px;
+  gap: 7px;
+  &.org {
+    background-color: $orange-color;
+  }
+}
+
+.btn-lg {
+  padding: 13px 115px;
+  width: 150px;
+}
+
+.white-btn {
+  gap: 5px;
+  padding: 13px 75px;
+  color: $main-color;
+  background-color: $white-color;
+}
+
+// Lists and Dropdowns
+.profile-page-list {
+  .page-item {
+    .item {
+      @include flex-center;
+      justify-content: space-between;
+      padding: 14px 15px;
+      border-bottom: 0.75px solid #cecece;
+      .prevent {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        .image-holder {
+          img {
+            width: 19px;
+            height: 19px;
+          }
+        }
+        .name-page {
+          @include fw-fs-lh(600, 16px, 30px);
+          color: #929292;
+        }
+      }
+      .badge {
+        @include flex-center;
+        @include circle(15px, 15px);
+        color: $white-color;
+        background-color: $main-color;
+      }
+      &:hover {
+        background-color: #f7f7f7;
+      }
+    }
+  }
 }

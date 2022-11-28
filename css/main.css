@@ -53,13 +53,38 @@
   width: fit-content;
 }
 
+.main-alert {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  width: 231px;
+  height: 30px;
+  background: #ecfffd;
+  border-radius: 8px;
+  color: #42D3D8;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 22px;
+}
+
+.sm-text {
+  color: #929292;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 21px;
+}
+
+.btn-lg,
+.white-btn,
+.main-btn,
 .sing-btn,
 .skip-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 13px 120px;
-  width: 350px;
+  width: 100%;
   height: 56px;
   background: #2ECED0;
   box-shadow: 0px 5px 2px rgba(37, 37, 37, 0.01), 0px 3px 2px rgba(37, 37, 37, 0.03), 0px 1px 1px rgba(37, 37, 37, 0.04), 0px 0px 1px rgba(37, 37, 37, 0.05), 0px 0px 0px rgba(37, 37, 37, 0.05);
@@ -75,6 +100,63 @@
   background: #cffffa;
   gap: 4px;
   color: #42D3D8;
+}
+
+.main-btn {
+  padding: 13px 70px;
+  gap: 7px;
+}
+.main-btn.org {
+  background-color: #F77721;
+}
+
+.btn-lg {
+  padding: 13px 115px;
+  width: 150px;
+}
+
+.white-btn {
+  gap: 5px;
+  padding: 13px 75px;
+  color: #42D3D8;
+  background-color: #fff;
+}
+
+.profile-page-list .page-item .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 14px 15px;
+  border-bottom: 0.75px solid #cecece;
+}
+.profile-page-list .page-item .item .prevent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-page-list .page-item .item .prevent .image-holder img {
+  width: 19px;
+  height: 19px;
+}
+.profile-page-list .page-item .item .prevent .name-page {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #929292;
+}
+.profile-page-list .page-item .item .badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #42D3D8;
+}
+.profile-page-list .page-item .item:hover {
+  background-color: #f7f7f7;
 }
 
 .check-text {
@@ -164,6 +246,93 @@
   font-size: 16px;
   line-height: 30px;
   color: #252525;
+}
+
+.player-box {
+  padding: 13px 10px;
+  box-shadow: 0px 6px 2px rgba(0, 0, 0, 0.01), 0px 3px 2px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.05), 0px 0px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 64px;
+  background: #fff;
+  border-radius: 16px;
+}
+.player-box .control-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+.player-box .control-options .icon-holder {
+  position: relative;
+}
+.player-box .control-options .icon-holder .bage {
+  position: absolute;
+  top: -2px;
+  right: -9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #EA7777;
+  font-weight: 500;
+  font-size: 13;
+  line-height: 24px;
+}
+
+.user-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.user-holder .user-img {
+  width: 50px;
+  height: 50px;
+}
+.user-holder .name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #252525;
+}
+
+.ticket-pay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.ticket-pay .about-ticket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.ticket-pay .about-ticket .salary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.ticket-pay .about-ticket .salary span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #252525;
+}
+.ticket-pay .about-ticket .num {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #42D3D8;
 }
 
 * {
